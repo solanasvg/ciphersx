@@ -1,0 +1,150 @@
+<html><head><base href="https://websim.ai/ouija-board" />
+<title>Bill Cipher's Cryptic Ouija Board - Reality Unraveled</title>
+<style>
+  body {
+    background-color: #0a0a0a;
+    color: #ddd;
+    font-family: 'Gravity Falls', 'Comic Sans MS', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: all 1s ease;
+  }
+  #reality-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #reality-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23000"/><path d="M0 0L100 100M100 0L0 100" stroke="%23ff0" stroke-width="0.5"/></svg>');
+    opacity: 0;
+    transition: opacity 2s ease;
+    pointer-events: none;
+  }
+  #message {
+    font-size: 36px;
+    text-align: center;
+    color: #ff0;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+    position: relative;
+    z-index: 10;
+  }
+  #bill-cipher {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10L90 80H10L50 10Z" fill="%23ffd700"/><circle cx="50" cy="50" r="20" fill="%23000000"/><path d="M40 50L60 50M50 40L50 60" stroke="%23ffffff" stroke-width="3"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate 10s linear infinite;
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+  @keyframes rotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  #secrets {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+    pointer-events: none;
+  }
+  #secrets-content {
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+    border: 2px solid #ff0;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    color: #ff0;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+  }
+</style>
+</head>
+<body>
+  <div id="reality-wrapper">
+    <div id="reality-layer"></div>
+  </div>
+  <div id="message">SCR4P TH3 SCRPT 4ND L00K B3H1ND TH3 CVR3S</div>
+  <div id="bill-cipher"></div>
+  <div id="secrets">
+    <div id="secrets-content">
+      <h2>Behind the Curtains: The Truth Revealed</h2>
+      <p>You've done it! You've cracked Bill Cipher's code and peered behind the veil of reality. Here's what you've uncovered:</p>
+      <ul>
+        <li>The Ouija board is just a facade, a mere puppet show controlled by an intricate web of algorithms and chance.</li>
+        <li>Each response is crafted by an AI, not spirits or interdimensional beings (or is it?).</li>
+        <li>The 'unexplained events' are pre-programmed, triggered by specific conditions in the code.</li>
+        <li>Bill Cipher's presence is just a cleverly designed SVG animation (but don't tell him that).</li>
+        <li>The entire experience is built on a complex system of APIs, databases, and randomized events.</li>
+      </ul>
+      <p>But remember, just because you've seen behind the curtain doesn't mean the magic isn't real. In the world of Gravity Falls, and in the realm of imagination, anything is possible. Reality is what you make of it!</p>
+      <p>Now that you know the truth, will you choose to believe in the mystery, or will you embrace the cold, hard facts of reality? The choice, as always, is yours...</p>
+      <p>P.S. Bill Cipher says, "R3M3MB3R! R34L1TY 1S 4N 1LLVS10N, TH3 VN1V3RS3 1S 4 H0L0GR4M, BVY G0LD, BYY333!"</p>
+    </div>
+  </div>
+
+<script>
+  const realityLayer = document.getElementById('reality-layer');
+  const billCipher = document.getElementById('bill-cipher');
+  const secrets = document.getElementById('secrets');
+  const message = document.getElementById('message');
+
+  function unravelReality() {
+    realityLayer.style.opacity = '1';
+    billCipher.style.opacity = '1';
+    secrets.style.opacity = '1';
+    secrets.style.pointerEvents = 'auto';
+    
+    message.style.animation = 'glitch 1s infinite';
+    document.body.style.animation = 'distort 5s infinite';
+  }
+
+  setTimeout(unravelReality, 1000);
+
+  // Add these keyframe animations to the existing <style> tag
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes glitch {
+      0% { transform: translate(0) }
+      20% { transform: translate(-5px, 5px) }
+      40% { transform: translate(-5px, -5px) }
+      60% { transform: translate(5px, 5px) }
+      80% { transform: translate(5px, -5px) }
+      100% { transform: translate(0) }
+    }
+    @keyframes distort {
+      0% { filter: hue-rotate(0deg) }
+      50% { filter: hue-rotate(360deg) }
+      100% { filter: hue-rotate(0deg) }
+    }
+  `;
+  document.head.appendChild(style);
+</script>
+
+</body></html>
